@@ -40,139 +40,72 @@
     flex-direction: column;
     justify-content: flex-end;
   }
-
   .hero-bg-pattern {
     position: absolute;
     inset: 0;
-    background-image: repeating-linear-gradient(
-      45deg,
-      rgba(255,255,255,0.03) 0px,
-      rgba(255,255,255,0.03) 2px,
-      transparent 2px,
-      transparent 20px
-    );
+    background-image: repeating-linear-gradient(45deg,rgba(255,255,255,0.03) 0px,rgba(255,255,255,0.03) 2px,transparent 2px,transparent 20px);
   }
-
   .hero-accent {
-    position: absolute;
-    top: -60px;
-    right: -60px;
-    width: 340px;
-    height: 340px;
-    border-radius: 50%;
-    background: var(--ept-gold);
-    opacity: 0.12;
+    position: absolute; top: -60px; right: -60px;
+    width: 340px; height: 340px; border-radius: 50%;
+    background: var(--ept-gold); opacity: 0.12;
   }
-
   .hero-accent-2 {
-    position: absolute;
-    bottom: -80px;
-    left: 20%;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: var(--ept-green);
-    opacity: 0.3;
+    position: absolute; bottom: -80px; left: 20%;
+    width: 200px; height: 200px; border-radius: 50%;
+    background: var(--ept-green); opacity: 0.3;
   }
-
   .hero-content {
-    position: relative;
-    z-index: 2;
-    padding: 3.5rem 2.5rem 3rem;
-    max-width: 860px;
+    position: relative; z-index: 2;
+    padding: 3.5rem 2.5rem 3rem; max-width: 860px;
   }
-
   .hero-eyebrow {
-    font-family: 'Oswald', sans-serif;
-    font-size: 13px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--ept-gold);
-    margin-bottom: 1rem;
+    font-family: 'Oswald', sans-serif; font-size: 13px;
+    letter-spacing: 3px; text-transform: uppercase;
+    color: var(--ept-gold); margin-bottom: 1rem;
   }
-
   .hero-title {
     font-family: 'Oswald', sans-serif;
     font-size: clamp(2.4rem, 5vw, 3.8rem);
-    font-weight: 700;
-    line-height: 1.05;
-    margin-bottom: 1.2rem;
-    color: #fff;
+    font-weight: 700; line-height: 1.05;
+    margin-bottom: 1.2rem; color: #fff;
   }
-
-  .hero-title span {
-    color: var(--ept-gold);
-  }
-
+  .hero-title span { color: var(--ept-gold); }
   .hero-subtitle {
-    font-size: 1.05rem;
-    color: rgba(255,255,255,0.78);
-    max-width: 560px;
-    margin-bottom: 2rem;
+    font-size: 1.05rem; color: rgba(255,255,255,0.78);
+    max-width: 560px; margin-bottom: 2rem;
   }
-
-  .hero-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
+  .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; }
   .badge {
     background: rgba(255,255,255,0.12);
     border: 1px solid rgba(255,255,255,0.25);
-    color: #fff;
-    font-size: 13px;
-    font-weight: 500;
-    padding: 6px 14px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    color: #fff; font-size: 13px; font-weight: 500;
+    padding: 6px 14px; border-radius: 20px;
+    display: flex; align-items: center; gap: 6px;
   }
-
-  .badge-gold {
-    background: var(--ept-gold);
-    border-color: var(--ept-gold);
-    color: #fff;
-  }
-
+  .badge-gold { background: var(--ept-gold); border-color: var(--ept-gold); }
   .badge svg { width: 15px; height: 15px; flex-shrink: 0; }
 
   /* ─── STATS BAR ─── */
   .stats-bar {
     background: var(--ept-green);
     padding: 1.5rem 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
+    display: flex; flex-wrap: wrap; gap: 0;
     justify-content: space-around;
   }
-
   .stat-item {
-    text-align: center;
-    padding: 0.5rem 1.5rem;
-    color: #fff;
+    text-align: center; padding: 0.5rem 1.5rem; color: #fff;
     border-right: 1px solid rgba(255,255,255,0.18);
-    flex: 1;
-    min-width: 120px;
+    flex: 1; min-width: 120px;
   }
-
   .stat-item:last-child { border-right: none; }
-
   .stat-number {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--ept-gold);
-    line-height: 1;
+    font-family: 'Oswald', sans-serif; font-size: 2.2rem;
+    font-weight: 700; color: var(--ept-gold); line-height: 1;
   }
-
   .stat-label {
-    font-size: 12px;
-    color: rgba(255,255,255,0.75);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 4px;
+    font-size: 12px; color: rgba(255,255,255,0.75);
+    text-transform: uppercase; letter-spacing: 1px; margin-top: 4px;
   }
 
   /* ─── SECTIONS ─── */
@@ -180,372 +113,155 @@
     padding: 4rem 2.5rem;
     max-width: 960px;
     margin: 0 auto;
-    padding: 4rem 2.5rem 6rem;
   }
-
-  .section-wide {
-    padding: 4rem 2.5rem;
-    background: var(--bg-light);
-  }
-
-  .section-wide-inner {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-
+  .section-wide { padding: 4rem 2.5rem; background: var(--bg-light); }
+  .section-wide-inner { max-width: 960px; margin: 0 auto; }
   .section-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 12px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--ept-green);
-    margin-bottom: 0.5rem;
+    font-family: 'Oswald', sans-serif; font-size: 12px;
+    letter-spacing: 3px; text-transform: uppercase;
+    color: var(--ept-green); margin-bottom: 0.5rem;
   }
-
   .section-title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.9rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 1.5rem;
+    font-family: 'Oswald', sans-serif; font-size: 1.9rem;
+    font-weight: 600; color: var(--text-dark); margin-bottom: 1.5rem;
   }
 
-  /* ─── PARCOURS / TIMELINE ─── */
-  .timeline {
-    position: relative;
-    padding-left: 2rem;
-    border-left: 2px solid var(--ept-green-light);
-  }
-
-  .timeline-item {
-    margin-bottom: 1.8rem;
-    position: relative;
-  }
-
+  /* ─── TIMELINE ─── */
+  .timeline { position: relative; padding-left: 2rem; border-left: 2px solid var(--ept-green-light); }
+  .timeline-item { margin-bottom: 1.8rem; position: relative; }
   .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -2.47rem;
-    top: 6px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--ept-green);
-    border: 2px solid var(--bg-white);
+    content: ''; position: absolute; left: -2.47rem; top: 6px;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--ept-green); border: 2px solid var(--bg-white);
     box-shadow: 0 0 0 2px var(--ept-green);
   }
-
-  .timeline-date {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--ept-gold);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  .timeline-match {
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--text-dark);
-    margin: 2px 0;
-  }
-
-  .timeline-details {
-    font-size: 14px;
-    color: var(--text-muted);
-  }
-
-  .result-win {
-    display: inline-block;
-    background: #d4edda;
-    color: #1a6b3a;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 4px;
-    margin-left: 6px;
-  }
-
-  .result-loss {
-    display: inline-block;
-    background: #fde8e8;
-    color: #9b2335;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 4px;
-    margin-left: 6px;
-  }
+  .timeline-date { font-size: 12px; font-weight: 600; color: var(--ept-gold); text-transform: uppercase; letter-spacing: 1px; }
+  .timeline-match { font-weight: 600; font-size: 1rem; color: var(--text-dark); margin: 2px 0; }
+  .timeline-details { font-size: 14px; color: var(--text-muted); }
+  .result-win { display: inline-block; background: #d4edda; color: #1a6b3a; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 6px; }
+  .result-loss { display: inline-block; background: #fde8e8; color: #9b2335; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 6px; }
 
   /* ─── DISTINCTIONS ─── */
-  .distinctions-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.2rem;
-    margin-top: 1.5rem;
-  }
-
-  .distinction-card {
-    background: var(--bg-white);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.4rem 1.2rem;
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-
-  .distinction-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--ept-gold-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
-  .distinction-icon svg {
-    width: 22px;
-    height: 22px;
-    color: var(--ept-gold);
-    fill: var(--ept-gold);
-  }
-
-  .distinction-name {
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--text-dark);
-  }
-
-  .distinction-title {
-    font-size: 13px;
-    color: var(--ept-green);
-    font-weight: 500;
-    margin: 2px 0 4px;
-  }
-
-  .distinction-desc {
-    font-size: 13px;
-    color: var(--text-muted);
-  }
+  .distinctions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; margin-top: 1.5rem; }
+  .distinction-card { background: var(--bg-white); border: 1px solid var(--border); border-radius: 12px; padding: 1.4rem 1.2rem; display: flex; gap: 1rem; align-items: flex-start; }
+  .distinction-icon { width: 44px; height: 44px; border-radius: 50%; background: var(--ept-gold-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .distinction-icon svg { width: 22px; height: 22px; fill: var(--ept-gold); }
+  .distinction-name { font-weight: 600; font-size: 1rem; color: var(--text-dark); }
+  .distinction-title { font-size: 13px; color: var(--ept-green); font-weight: 500; margin: 2px 0 4px; }
+  .distinction-desc { font-size: 13px; color: var(--text-muted); }
 
   /* ─── MATCHS À VENIR ─── */
-  .upcoming-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
+  .upcoming-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .upcoming-card { background: var(--bg-white); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; border-left: 4px solid var(--ept-green); }
+  .upcoming-card.final { border-left-color: var(--ept-gold); }
+  .upcoming-date { font-size: 13px; color: var(--text-muted); margin-bottom: 4px; }
+  .upcoming-competition { font-weight: 600; font-size: 0.95rem; color: var(--text-dark); }
+  .upcoming-opponent { font-size: 14px; color: var(--ept-green); margin-top: 4px; }
+  .upcoming-ville { font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 4px; margin-top: 4px; }
 
-  .upcoming-card {
-    background: var(--bg-white);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1.2rem;
-    border-left: 4px solid var(--ept-green);
-  }
-
-  .upcoming-card.final {
-    border-left-color: var(--ept-gold);
-  }
-
-  .upcoming-date {
-    font-size: 13px;
-    color: var(--text-muted);
-    margin-bottom: 4px;
-  }
-
-  .upcoming-competition {
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--text-dark);
-  }
-
-  .upcoming-opponent {
-    font-size: 14px;
-    color: var(--ept-green);
-    margin-top: 4px;
-  }
-
-  .upcoming-ville {
-    font-size: 13px;
-    color: var(--text-muted);
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin-top: 4px;
-  }
-
-  /* ─── APPEL / CTA ─── */
-  .cta-section {
-    background: var(--ept-green-dark);
-    color: #fff;
-    padding: 4rem 2.5rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .cta-section::before {
-    content: '';
-    position: absolute;
-    top: -80px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 360px;
-    height: 360px;
-    border-radius: 50%;
-    background: var(--ept-gold);
-    opacity: 0.07;
-  }
-
-  .cta-title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    position: relative;
-  }
-
-  .cta-title span { color: var(--ept-gold); }
-
-  .cta-body {
-    font-size: 1.05rem;
-    color: rgba(255,255,255,0.82);
-    max-width: 640px;
-    margin: 0 auto 1.5rem;
-    position: relative;
-  }
-
-  .cta-highlight {
-    display: inline-block;
-    background: var(--ept-gold);
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    padding: 10px 28px;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    position: relative;
-  }
-
-  .cta-note {
-    font-size: 14px;
-    color: rgba(255,255,255,0.6);
-    position: relative;
-  }
-
-  /* ─── GALERIE ─── */
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-top: 1.5rem;
-  }
-
-  .gallery-slot {
-    background: var(--bg-light);
-    border: 2px dashed var(--border);
-    border-radius: 10px;
-    aspect-ratio: 4/3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    color: var(--text-muted);
-    font-size: 13px;
-    text-align: center;
-    padding: 1rem;
-    transition: background 0.2s;
-  }
-
-  .gallery-slot svg {
-    width: 32px;
-    height: 32px;
-    opacity: 0.4;
-  }
-
-  .gallery-slot span { opacity: 0.6; }
-
-  .video-slot {
-    grid-column: 1 / -1;
-    aspect-ratio: 16/9;
-    background: #0f0f0f;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    color: rgba(255,255,255,0.5);
-    font-size: 14px;
-    border: 2px dashed rgba(255,255,255,0.12);
-  }
-
-  .video-slot svg {
-    width: 52px;
-    height: 52px;
-    opacity: 0.4;
-  }
-
-  /* ─── ADVERSAIRE NOTE ─── */
+  /* ─── NOTE BOX ─── */
   .note-box {
-    background: var(--ept-gold-light);
-    border-left: 4px solid var(--ept-gold);
-    border-radius: 0 8px 8px 0;
-    padding: 1.2rem 1.5rem;
-    margin: 1.5rem 0;
-    font-size: 14px;
-    color: #5a4210;
+    background: var(--ept-gold-light); border-left: 4px solid var(--ept-gold);
+    border-radius: 0 8px 8px 0; padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0; font-size: 14px; color: #5a4210;
   }
-
   .note-box strong { color: #3d2c08; }
 
-  /* ─── CONTEXTE FINANCIER ─── */
-  .comparison-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1.2rem;
-    font-size: 14px;
-  }
-
-  .comparison-table th {
-    text-align: left;
-    padding: 10px 14px;
-    background: var(--ept-green);
-    color: #fff;
-    font-weight: 600;
-    font-size: 13px;
-  }
-
+  /* ─── TABLE FINANCIÈRE ─── */
+  .comparison-table { width: 100%; border-collapse: collapse; margin-top: 1.2rem; font-size: 14px; }
+  .comparison-table th { text-align: left; padding: 10px 14px; background: var(--ept-green); color: #fff; font-weight: 600; font-size: 13px; }
   .comparison-table th:first-child { border-radius: 8px 0 0 0; }
   .comparison-table th:last-child { border-radius: 0 8px 0 0; }
-
-  .comparison-table td {
-    padding: 10px 14px;
-    border-bottom: 1px solid var(--border);
-    vertical-align: middle;
-  }
-
+  .comparison-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: middle; }
   .comparison-table tr:last-child td { border-bottom: none; }
   .comparison-table tr:nth-child(even) td { background: var(--bg-light); }
-
   .salary-yes { color: var(--ept-green); font-weight: 600; }
   .salary-no { color: #9b2335; font-weight: 700; }
 
-  /* ─── FOOTER ─── */
-  footer {
-    background: #0a2518;
+  /* ─── GALERIE ─── */
+  .gallery-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 4rem 2.5rem 5rem;
+  }
+  .gallery-inner {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 1.5rem;
+  }
+  /* Vidéo — pleine largeur */
+  .video-wrapper {
+    grid-column: 1 / -1;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000;
+    line-height: 0;
+  }
+  .video-wrapper video {
+    width: 100%;
+    display: block;
+    max-height: 420px;
+    object-fit: contain;
+    background: #000;
+  }
+  .video-caption {
+    background: #111;
     color: rgba(255,255,255,0.5);
-    text-align: center;
-    padding: 2rem;
     font-size: 13px;
+    text-align: center;
+    padding: 8px;
+    line-height: 1.4;
+  }
+  /* Photos */
+  .photo-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--bg-light);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+  }
+  .photo-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+  }
+  .photo-caption {
+    padding: 8px 10px;
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+    background: #fff;
+    flex-shrink: 0;
   }
 
+  /* ─── CTA ─── */
+  .cta-section {
+    background: var(--ept-green-dark); color: #fff;
+    padding: 4rem 2.5rem; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .cta-section::before {
+    content: ''; position: absolute;
+    top: 20px; left: 50%; transform: translateX(-50%);
+    width: 360px; height: 360px; border-radius: 50%;
+    background: var(--ept-gold); opacity: 0.07;
+  }
+  .cta-title { font-family: 'Oswald', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 1rem; position: relative; }
+  .cta-title span { color: var(--ept-gold); }
+  .cta-body { font-size: 1.05rem; color: rgba(255,255,255,0.82); max-width: 640px; margin: 0 auto 1.5rem; position: relative; }
+  .cta-highlight { display: inline-block; background: var(--ept-gold); color: #fff; font-family: 'Oswald', sans-serif; font-size: 1.3rem; font-weight: 600; padding: 10px 28px; border-radius: 6px; margin-bottom: 1rem; position: relative; }
+  .cta-note { font-size: 14px; color: rgba(255,255,255,0.6); position: relative; }
+
+  /* ─── FOOTER ─── */
+  footer { background: #0a2518; color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-size: 13px; }
   footer strong { color: rgba(255,255,255,0.8); }
 
   /* ─── RESPONSIVE ─── */
@@ -553,9 +269,11 @@
     .hero-content { padding: 2.5rem 1.2rem 2rem; }
     .section { padding: 3rem 1.2rem; }
     .section-wide { padding: 3rem 1.2rem; }
+    .gallery-section { padding: 3rem 1.2rem 4rem; }
     .stats-bar { padding: 1.2rem; }
     .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
     .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .photo-card img { height: 160px; }
     .cta-section { padding: 3rem 1.2rem; }
   }
 </style>
@@ -570,9 +288,7 @@
   <div class="hero-content">
     <p class="hero-eyebrow">École Polytechnique de Thiès · Saison 2025–2026</p>
     <h1 class="hero-title">US EPT<br><span>Volleyball</span><br>Section Hommes</h1>
-    <p class="hero-subtitle">
-      Un parcours d'exception — demi-finales du Championnat National Élite, quarts de finale de la Coupe du Sénégal, Vice-champions de la Sénégambie Cup. Porteurs fiers des couleurs de l'EPT, au Sénégal et au-delà.
-    </p>
+    <p class="hero-subtitle">Un parcours d'exception — demi-finales du Championnat National Élite, quarts de finale de la Coupe du Sénégal, Vice-champions de la Sénégambie Cup. Porteurs fiers des couleurs de l'EPT, au Sénégal et au-delà.</p>
     <div class="hero-badges">
       <div class="badge badge-gold">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -584,7 +300,7 @@
       </div>
       <div class="badge">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        Vice-champions Sénégambie 2026
+        Vice-champion Sénégambie 2026
       </div>
       <div class="badge">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
@@ -596,105 +312,76 @@
 
 <!-- ═══ STATS BAR ═══ -->
 <div class="stats-bar">
-  <div class="stat-item">
-    <div class="stat-number">11</div>
-    <div class="stat-label">Matchs joués</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">8</div>
-    <div class="stat-label">Victoires</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">3</div>
-    <div class="stat-label">Défaites</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">5</div>
-    <div class="stat-label">Régions visitées</div>
-  </div>
-  <div class="stat-item">
-    <div class="stat-number">73%</div>
-    <div class="stat-label">Taux de victoire</div>
-  </div>
+  <div class="stat-item"><div class="stat-number">11</div><div class="stat-label">Matchs joués</div></div>
+  <div class="stat-item"><div class="stat-number">8</div><div class="stat-label">Victoires</div></div>
+  <div class="stat-item"><div class="stat-number">3</div><div class="stat-label">Défaites</div></div>
+  <div class="stat-item"><div class="stat-number">5</div><div class="stat-label">Régions visitées</div></div>
+  <div class="stat-item"><div class="stat-number">73%</div><div class="stat-label">Taux de victoire</div></div>
 </div>
 
 <!-- ═══ PARCOURS ═══ -->
 <section class="section">
   <p class="section-label">Saison 2025–2026</p>
   <h2 class="section-title">Le parcours match par match</h2>
-
   <div class="note-box">
-    <strong>À noter :</strong> Les 3 défaites de la saison ont été enregistrées exclusivement face à l'<strong>ASC VD, champion du Sénégal en titre</strong> — une équipe composée de joueurs salariés percevant entre 300 000 et 400 000 FCFA par mois. Malgré cette inégalité flagrante des moyens, chaque set face à eux a été âprement disputé, témoignant du niveau réel de nos joueurs.
+    <strong>À noter :</strong> Les 3 défaites ont été enregistrées exclusivement face à l'<strong>ASC VD, champion du Sénégal en titre</strong> — une équipe composée de joueurs salariés percevant entre 300 000 et 400 000 FCFA par mois. Malgré cette inégalité flagrante des moyens, chaque set a été âprement disputé.
   </div>
-
   <div class="timeline">
-
     <div class="timeline-item">
       <div class="timeline-date">24 Janvier 2026 · Ziguinchor</div>
       <div class="timeline-match">US EPT 3 – 1 ASUC <span class="result-win">Victoire</span></div>
-      <div class="timeline-details">Championnat Élite · Match d'ouverture de la saison. Entrée en matière maîtrisée à Ziguinchor.</div>
+      <div class="timeline-details">Championnat Élite · Match d'ouverture. Entrée en matière maîtrisée à Ziguinchor.</div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-date">14 Février 2026 · Thiès</div>
       <div class="timeline-match">US EPT 3 – 1 AS Police <span class="result-win">Victoire</span></div>
       <div class="timeline-details">Championnat Élite · Journée 2. Maîtrise à domicile.</div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-date">28 Février 2026 · Rufisque</div>
       <div class="timeline-match">US EPT 0 – 3 ASC VD <span class="result-loss">Défaite</span></div>
-      <div class="timeline-details">Championnat Élite · Premier duel contre le champion du Sénégal, en pleine période de Ramadan. Des conditions difficiles pour nos joueurs, non rémunérés et loin de leurs familles.</div>
+      <div class="timeline-details">Championnat Élite · Premier duel contre le champion du Sénégal, en pleine période de Ramadan.</div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-date">11 Avril 2026 · Tambacounda</div>
       <div class="timeline-match">US EPT 3 – 2 KOBAS <span class="result-win">Victoire</span></div>
-      <div class="timeline-details">Championnat Élite · Match très disputé sous le soleil ardent de Tambacounda. Caractère et résilience démontrés.</div>
+      <div class="timeline-details">Championnat Élite · Match très disputé sous le soleil ardent de Tambacounda.</div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-date">3 Mai 2026 · Thiès</div>
       <div class="timeline-match">US EPT 3 – 1 ASUC <span class="result-win">Victoire</span></div>
       <div class="timeline-details">Championnat Élite · Journée 5. Confirmation à domicile.</div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-date">10 Mai 2026 · Dakar</div>
       <div class="timeline-match">US EPT 3 – 0 AS Police <span class="result-win">Victoire</span></div>
-      <div class="timeline-details">Championnat Élite · Journée 6. Victoire nette et sans appel à Dakar.</div>
+      <div class="timeline-details">Championnat Élite · Journée 6. Victoire nette à Dakar.</div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-date">14 Mai 2026 · Bijilo (Gambie)</div>
       <div class="timeline-match">US EPT 3 – 2 YMCA Gambie <span class="result-win">Victoire</span></div>
-      <div class="timeline-details">Tournoi Sénégambie · Phase de poules. L'EPT franchit la frontière pour représenter le Sénégal sur la scène internationale.</div>
+      <div class="timeline-details">Tournoi Sénégambie · Phase de poules. L'EPT franchit la frontière pour représenter le Sénégal.</div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-date">15 Mai 2026 · Bijilo (Gambie)</div>
       <div class="timeline-match">US EPT 3 – 1 GAF Gambie <span class="result-win">Victoire</span></div>
-      <div class="timeline-details">Tournoi Sénégambie · Phase de poules. Deuxième victoire consécutive en terre gambienne.</div>
+      <div class="timeline-details">Tournoi Sénégambie · Deuxième victoire consécutive en terre gambienne.</div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-date">17 Mai 2026 · Bijilo (Gambie)</div>
       <div class="timeline-match">US EPT 0 – 3 YMCA Gambie <span class="result-loss">Défaite</span></div>
-      <div class="timeline-details">Finale Sénégambie Cup · Vice-champions de la Sénégambie. Une finale internationale pour l'EPT — une première dont on peut être fier.</div>
+      <div class="timeline-details">Finale Sénégambie Cup · Vice-champions. Une finale internationale — une première dont on peut être fier.</div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-date">24 Mai 2026 · Thiès</div>
       <div class="timeline-match">US EPT 3 – 0 KOBAS <span class="result-win">Victoire</span></div>
       <div class="timeline-details">Championnat Élite · Journée 7. Victoire nette à domicile.</div>
     </div>
-
     <div class="timeline-item">
       <div class="timeline-date">7 Juin 2026 · Thiès</div>
       <div class="timeline-match">US EPT 2 – 3 ASC VD <span class="result-loss">Défaite</span></div>
-      <div class="timeline-details">Championnat Élite · Duel au sommet contre le champion du Sénégal. Score serré en 5 sets — la preuve que l'écart de niveau ne justifie pas l'écart de moyens.</div>
+      <div class="timeline-details">Championnat Élite · Duel au sommet. Score serré — la preuve que l'écart de niveau ne justifie pas l'écart de moyens.</div>
     </div>
-
   </div>
 </section>
 
@@ -703,34 +390,27 @@
   <div class="section-wide-inner">
     <p class="section-label">Sénégambie Cup 2026</p>
     <h2 class="section-title">Distinctions individuelles</h2>
-    <p style="color: var(--text-muted); margin-bottom: 0.5rem;">Des honneurs qui rejaillissent sur l'EPT, sur la ville de Thiès et sur le Sénégal tout entier.</p>
-
+    <p style="color: var(--text-muted); margin-bottom: 0.5rem;">Des honneurs qui rejaillissent sur l'EPT, sur Thiès et sur le Sénégal tout entier.</p>
     <div class="distinctions-grid">
       <div class="distinction-card">
-        <div class="distinction-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
+        <div class="distinction-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
         <div>
           <div class="distinction-name">Mohamed Aminou Niang</div>
           <div class="distinction-title">🏆 Meilleur Middle Blocker — Sénégambie Cup 2026</div>
           <div class="distinction-desc">Élève ingénieur en 3e année à l'EPT (DIC1-GIT). Une distinction internationale qui illustre l'excellence académique et sportive de l'EPT.</div>
         </div>
       </div>
-
       <div class="distinction-card">
-        <div class="distinction-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-        </div>
+        <div class="distinction-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
         <div>
           <div class="distinction-name">Cheikh Sadibou Fall</div>
           <div class="distinction-title">🏆 Meilleur Passeur — Sénégambie Cup 2026</div>
-          <div class="distinction-desc">Sélectionné pour représenter les couleurs nationales lors du prochain rassemblement de l'Équipe Nationale du Sénégal. Le seul passeur de l'équipe — et quel passeur.</div>
+          <div class="distinction-desc">Sélectionné pour représenter les couleurs nationales lors du prochain rassemblement de l'Équipe Nationale du Sénégal.</div>
         </div>
       </div>
     </div>
-
     <div class="note-box" style="margin-top: 1.5rem;">
-      <strong>Fait remarquable :</strong> Cheikh Sadibou Fall est <strong>le seul passeur de l'effectif</strong>, faute de moyens pour recruter un second passeur identifié à Khombole. Malgré cette contrainte, il a été nommé meilleur passeur du tournoi international et convoqué en équipe nationale. Cela illustre à la fois l'extraordinaire talent de nos joueurs et les limites imposées par le manque de financement.
+      <strong>Fait remarquable :</strong> Cheikh Sadibou Fall est <strong>le seul passeur de l'effectif</strong>, faute de moyens pour en recruter un second. Malgré cette contrainte, il a été nommé meilleur passeur du tournoi international et convoqué en équipe nationale.
     </div>
   </div>
 </div>
@@ -739,39 +419,14 @@
 <section class="section">
   <p class="section-label">Contexte</p>
   <h2 class="section-title">Une inégalité des moyens criante</h2>
-  <p style="color: var(--text-muted); margin-bottom: 1rem;">
-    L'US EPT est le seul « ténor » du volleyball sénégalais à ne pas rémunérer ses joueurs. Pourtant, elle tient tête aux meilleures équipes de l'élite. C'est une prouesse qui mérite d'être reconnue et soutenue.
-  </p>
-
+  <p style="color: var(--text-muted); margin-bottom: 1rem;">L'US EPT est le seul « ténor » du volleyball sénégalais à ne pas rémunérer ses joueurs. Pourtant, elle tient tête aux meilleures équipes de l'élite.</p>
   <table class="comparison-table">
-    <thead>
-      <tr>
-        <th>Club</th>
-        <th>Statut</th>
-        <th>Salaire joueurs</th>
-      </tr>
-    </thead>
+    <thead><tr><th>Club</th><th>Statut</th><th>Salaire joueurs</th></tr></thead>
     <tbody>
-      <tr>
-        <td><strong>ASFA</strong></td>
-        <td>Ténor du volleyball sénégalais</td>
-        <td class="salary-yes">Oui — joueurs salariés</td>
-      </tr>
-      <tr>
-        <td><strong>UGB</strong></td>
-        <td>Ténor du volleyball sénégalais</td>
-        <td class="salary-yes">Oui — joueurs salariés</td>
-      </tr>
-      <tr>
-        <td><strong>ASC VD</strong></td>
-        <td>Champion du Sénégal en titre</td>
-        <td class="salary-yes">Oui — 300 000 à 400 000 FCFA/mois</td>
-      </tr>
-      <tr>
-        <td><strong>US EPT</strong></td>
-        <td>Ténor — Demi-finaliste national 2026</td>
-        <td class="salary-no">Non — prime de 10 000 FCFA par victoire uniquement</td>
-      </tr>
+      <tr><td><strong>ASFA</strong></td><td>Ténor du volleyball sénégalais</td><td class="salary-yes">Oui — joueurs salariés</td></tr>
+      <tr><td><strong>UGB</strong></td><td>Ténor du volleyball sénégalais</td><td class="salary-yes">Oui — joueurs salariés</td></tr>
+      <tr><td><strong>ASC VD</strong></td><td>Champion du Sénégal en titre</td><td class="salary-yes">Oui — 300 000 à 400 000 FCFA/mois</td></tr>
+      <tr><td><strong>US EPT</strong></td><td>Ténor — Demi-finaliste national 2026</td><td class="salary-no">Non — prime de 10 000 FCFA par victoire uniquement</td></tr>
     </tbody>
   </table>
 </section>
@@ -782,120 +437,95 @@
     <p class="section-label">Prochaines échéances</p>
     <h2 class="section-title">Les rendez-vous qui attendent l'équipe</h2>
     <p style="color: var(--text-muted);">La qualification est acquise. L'ambition est là. Il ne manque plus que les moyens.</p>
-
     <div class="upcoming-grid">
       <div class="upcoming-card">
         <div class="upcoming-date">14 Juin 2026</div>
         <div class="upcoming-competition">Quart de finale — Coupe du Sénégal</div>
         <div class="upcoming-opponent">vs UGB</div>
-        <div class="upcoming-ville">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Saint-Louis
-        </div>
+        <div class="upcoming-ville"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Saint-Louis</div>
       </div>
-
       <div class="upcoming-card">
         <div class="upcoming-date">21 Juin 2026</div>
         <div class="upcoming-competition">Demi-finale — Coupe du Sénégal</div>
         <div class="upcoming-opponent">Adversaire à définir</div>
-        <div class="upcoming-ville">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Lieu à définir
-        </div>
+        <div class="upcoming-ville"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lieu à définir</div>
       </div>
-
       <div class="upcoming-card">
         <div class="upcoming-date">27 Juin 2026</div>
         <div class="upcoming-competition">Demi-finale — Championnat Élite</div>
         <div class="upcoming-opponent">vs ASFA</div>
-        <div class="upcoming-ville">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Dakar
-        </div>
+        <div class="upcoming-ville"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Dakar</div>
       </div>
-
       <div class="upcoming-card final">
         <div class="upcoming-date">4 Juillet 2026</div>
         <div class="upcoming-competition">🏆 Finale — Championnat Élite</div>
         <div class="upcoming-opponent">Adversaire à définir</div>
-        <div class="upcoming-ville">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Stade Marius Ndiaye, Dakar
-        </div>
+        <div class="upcoming-ville"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Stade Marius Ndiaye, Dakar</div>
       </div>
-
       <div class="upcoming-card final">
         <div class="upcoming-date">11 Juillet 2026</div>
         <div class="upcoming-competition">🏆 Finale — Coupe du Sénégal</div>
         <div class="upcoming-opponent">Adversaire à définir</div>
-        <div class="upcoming-ville">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Lieu à définir
-        </div>
+        <div class="upcoming-ville"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lieu à définir</div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- ═══ GALERIE PHOTOS ═══ -->
-<section class="section">
-  <p class="section-label">Galerie</p>
-  <h2 class="section-title">Photos & Vidéos</h2>
-  <p style="color: var(--text-muted); margin-bottom: 0.5rem;">Espace réservé aux médias de la saison — les images parlent d'elles-mêmes.</p>
+<div class="gallery-section">
+  <div class="gallery-inner">
+    <p class="section-label">Galerie</p>
+    <h2 class="section-title">Photos & Vidéos</h2>
+    <p style="color: var(--text-muted); margin-bottom: 0.5rem;">Les images d'une saison historique.</p>
 
-  <div class="gallery-grid">
-    <div class="video-slot">
-       <video controls style="width:100%; display:block;">
-         <source src="SENEGAMBIE.mp4" type="video/mp4">
+    <div class="gallery-grid">
+
+      <!-- VIDÉO -->
+      <div class="video-wrapper">
+        <video controls>
+          <source src="SENEGAMBIE.mp4" type="video/mp4">
         </video>
-      <span style="color:rgba(255,255,255,0.5); font-size:14px;">Vidéo distinctions individuelles</span>
-    </div>
+        <div class="video-caption">Vidéo — Distinctions individuelles Sénégambie Cup 2026</div>
+      </div>
 
-    <div class="gallery-slot">
-      <img src="DREAM_TEAM.jpeg" alt="Sénégambie Cup" 
-       style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
-      <span>Photo — Dream Team Sénégambie Cup</span>
-    </div>
+      <!-- PHOTOS -->
+      <div class="photo-card">
+        <img src="DREAM_TEAM.jpeg" alt="Dream Team Sénégambie Cup">
+        <div class="photo-caption">Dream Team — Sénégambie Cup</div>
+      </div>
 
-    <div class="gallery-slot" >
-      <img src="TEAM_EPT.jpeg" alt="Sénégambie Cup" 
-       style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
-      <span>Photo — Matchs Championnat</span>
-    </div>
+      <div class="photo-card">
+        <img src="TEAM_EPT.jpeg" alt="Équipe EPT">
+        <div class="photo-caption">Matchs Championnat</div>
+      </div>
 
-    <div class="gallery-slot">
-      <img src="VICE_CHAMPION.jpeg" alt="Sénégambie Cup" 
-       style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
-      <span>Photo — L'équipe</span>
-    </div>
+      <div class="photo-card">
+        <img src="VICE_CHAMPION.jpeg" alt="Vice-champions">
+        <div class="photo-caption">Vice-champions Sénégambie</div>
+      </div>
 
-    <div class="gallery-slot">
-      <img src="Directeur.jpeg" alt="Sénégambie Cup" 
-       style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
-      <span>Photo — Distinctions</span>
-    </div>
+      <div class="photo-card">
+        <img src="Directeur.jpeg" alt="Distinctions">
+        <div class="photo-caption">Distinctions individuelles</div>
+      </div>
 
-    <div class="gallery-slot">
-     <img src="CHEIKH_Aminou.jpeg" alt="Sénégambie Cup" 
-       style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
-      <span>Photo — Déplacements</span>
+      <div class="photo-card">
+        <img src="CHEIKH_Aminou.jpeg" alt="Cheikh et Aminou">
+        <div class="photo-caption">Cheikh Sadibou & Aminou — lauréats</div>
+      </div>
+
     </div>
   </div>
-</section>
+</div>
 
 <!-- ═══ CTA ═══ -->
 <section class="cta-section">
   <h2 class="cta-title">Ensemble, portons haut<br>les couleurs de <span>l'EPT</span></h2>
-  <p class="cta-body">
-    Ce n'est pas seulement notre équipe — c'est votre équipe. Chaque victoire est une victoire pour l'EPT, pour Thiès, pour le Sénégal. Nos joueurs se battent sans salaire, par amour de leurs couleurs. Il est temps que l'institution entière se batte avec eux.
-  </p>
-  <p class="cta-body" style="font-style: italic; font-size: 0.95rem;">
-    « Ce n'est pas juste notre combat à nous — c'est votre combat, celui de chaque professeur, de chaque membre de cette famille. Un appel d'un fils, d'un étudiant, d'un membre de la communauté EPT. »
-  </p>
+  <p class="cta-body">Ce n'est pas seulement notre équipe — c'est votre équipe. Chaque victoire est une victoire pour l'EPT, pour Thiès, pour le Sénégal. Nos joueurs se battent sans salaire, par amour de leurs couleurs.</p>
+  <p class="cta-body" style="font-style: italic; font-size: 0.95rem;">« Ce n'est pas juste notre combat à nous — c'est votre combat, celui de chaque professeur, de chaque membre de cette famille. Un appel d'un fils, d'un étudiant, d'un membre de la communauté EPT. »</p>
   <div class="cta-highlight">Objectif : 4 000 000 FCFA</div>
-  <p class="cta-body" style="margin-top: 0.5rem;">
-    Contribution suggérée : <strong style="color: var(--ept-gold);">20 000 FCFA minimum</strong> par enseignant. C'est avec ces petits gestes collectifs que de grandes choses se bâtissent.
-  </p>
+  <p class="cta-body" style="margin-top: 0.5rem;">Contribution suggérée : <strong style="color: var(--ept-gold);">20 000 FCFA minimum</strong> par enseignant. C'est avec ces petits gestes collectifs que de grandes choses se bâtissent.</p>
   <p class="cta-note">Section Volleyball · Union Sportive de l'École Polytechnique de Thiès (US EPT) · Saison 2025–2026</p>
 </section>
 
